@@ -35,4 +35,24 @@ function transformToObjects(numberArray) {
     return returnArr;
 }
 
-console.log(transformToObjects([1,2,3]));
+const arr = transformToObjects([1,2,3])
+
+console.log(arr);
+
+const [first, second, third] = arr;
+console.log(first.val);
+console.log(second.val);
+console.log(third.val);
+
+
+const user = {
+    name: "Ali",
+    age: 22
+}
+
+const {name: aliasName, age: aliasAge} = user
+
+console.log(aliasName);
+console.log(user.name);
+console.log(aliasAge);
+console.log(user.age);
