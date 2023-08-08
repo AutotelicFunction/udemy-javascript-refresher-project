@@ -56,3 +56,38 @@ console.log(aliasName);
 console.log(user.name);
 console.log(aliasAge);
 console.log(user.age);
+
+const hobbies = ["Learning", "Coding"];
+const additionalHobbies = ["Reading"];
+const superUser = {
+    isAdmin: true,
+    ...user
+}
+
+const extendedHobbies = [...hobbies, ...additionalHobbies];
+console.log(user);
+console.log(superUser);
+console.log(extendedHobbies);
+console.log(hobbies);
+console.log(additionalHobbies);
+
+
+if (Util.password) {
+    const pass = prompt("please enter a PW");
+
+    if (pass === "A") {
+        console.log(":)");
+    } else if (pass === "hello"){
+        console.log("hi");
+    } else {
+        console.log("bruh");
+    }
+} else {
+    console.log("no password prompt")
+}
+
+for (const hobby of extendedHobbies) {
+    console.log("Lol, more hobbies  \n" + hobby);
+}
+
+
