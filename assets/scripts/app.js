@@ -98,10 +98,10 @@ const theSameAsThis = ()=>{
     console.log("and again kekw");
 };
 
-setTimeout(thisIs, 1000);
-setTimeout(theSameAsThis, 1000);
+setTimeout(thisIs, 10000);
+setTimeout(theSameAsThis, 10000);
 setTimeout(() => {
     console.log("more timing out")
-}, 1000);
+}, 10000);
 
 onclick = greeting; // oh lol
